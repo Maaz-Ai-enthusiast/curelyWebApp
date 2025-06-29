@@ -14,19 +14,21 @@ const DownloadSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center text-white">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Download Curely & Take Control
-            <br />
-            of Your Health
-          </h2>
-          <p className="text-purple-100 text-lg mb-12 max-w-2xl mx-auto">
-            Join millions of users who trust Curely for their healthcare needs. 
-            Download our app today and experience the future of digital health.
-          </p>
+          <div data-aos="fade-up">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              Download Curely & Take Control
+              <br />
+              of Your Health
+            </h2>
+            <p className="text-purple-100 text-lg mb-12 max-w-2xl mx-auto">
+              Join millions of users who trust Curely for their healthcare needs. 
+              Download our app today and experience the future of digital health.
+            </p>
+          </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
             {/* QR Code */}
-            <div className="bg-white rounded-2xl p-8 shadow-2xl">
+            <div className="bg-white rounded-2xl p-8 shadow-2xl" data-aos="fade-right">
               <div className="w-32 h-32 bg-black rounded-lg flex items-center justify-center mb-4">
                 <QrCode className="w-24 h-24 text-white" />
               </div>
@@ -34,7 +36,7 @@ const DownloadSection = () => {
             </div>
 
             {/* Download Buttons */}
-            <div className="space-y-4">
+            <div className="space-y-4" data-aos="fade-left">
               <Button className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-xl text-lg font-semibold flex items-center gap-3 w-full sm:w-auto">
                 <Download className="w-6 h-6" />
                 Download for iOS
@@ -46,7 +48,7 @@ const DownloadSection = () => {
             </div>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center" data-aos="fade-up" data-aos-delay="200">
             <div>
               <div className="text-3xl font-bold mb-2">4.9★</div>
               <div className="text-purple-100 text-sm">App Store Rating</div>

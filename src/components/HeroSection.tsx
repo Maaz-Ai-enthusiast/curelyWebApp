@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Download, Play } from "lucide-react";
 
@@ -7,7 +6,7 @@ const HeroSection = () => {
     <section className="bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 py-20 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left" data-aos="fade-right">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Manage Your Health{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
@@ -34,7 +33,7 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="relative">
+          <div className="relative" data-aos="fade-left">
             <div className="relative z-10 flex justify-center items-center">
               {/* Phone mockups container */}
               <div className="relative w-full max-w-md">

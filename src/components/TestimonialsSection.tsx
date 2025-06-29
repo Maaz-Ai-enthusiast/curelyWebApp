@@ -1,5 +1,5 @@
-
 import { Star, Quote } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Real People. Real Results.
           </h2>
@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100" data-aos="fade-up" data-aos-delay={index * 100}>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-semibold mr-4">
                   {testimonial.avatar}
@@ -88,7 +88,7 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12" data-aos="fade-up">
           <Button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 px-8 py-3 rounded-xl font-semibold">
             Read More Reviews
           </Button>
