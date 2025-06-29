@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				purple: {
+					50: '#f3f4ff',
+					100: '#ebebff',
+					200: '#c0c1ff',
+					300: '#a5a8ff',
+					400: '#8b8eff',
+					500: '#7c3aed',
+					600: '#6d28d9',
+					700: '#5b21b6',
+					800: '#4c1d95',
+					900: '#3c1361',
 				}
 			},
 			borderRadius: {
@@ -89,6 +102,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			}
 		}
 	},
