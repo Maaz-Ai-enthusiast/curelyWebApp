@@ -29,6 +29,8 @@ const Footer = () => {
     }
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
@@ -130,7 +132,8 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Curely. All rights reserved. Made with ❤️ for better healthcare.
+            
+  © {currentYear} Curely. All rights reserved. Made with ❤️ for better healthcare.
           </p>
         </div>
       </div>

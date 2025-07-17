@@ -18,7 +18,8 @@ const PricingSection = () => {
       ],
       buttonText: "Get Started",
       popular: false,
-      buttonClass: "border-purple-200 text-purple-600 hover:bg-purple-50"
+      buttonClass: "bg-purple-600 text-white border border-purple-600 hover:bg-white hover:text-purple-600"
+
     },
     {
       name: "Premium",
@@ -55,8 +56,8 @@ const PricingSection = () => {
         "Insurance integration"
       ],
       buttonText: "Get Started",
-      popular: false,
-      buttonClass: "border-purple-200 text-purple-600 hover:bg-purple-50"
+      popular: false,buttonClass: "bg-purple-600 text-white border border-purple-600 hover:bg-white hover:text-purple-600"
+
     }
   ];
 
